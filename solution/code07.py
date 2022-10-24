@@ -35,8 +35,10 @@ def get_scores(listOfCheckers):
     
     with open(path) as f:
         for line in f:
+            line = line.strip()
             if not line:
                 continue
+                
             items = line.split(';')
             date = items[1]
             s_likes = items[2]
@@ -56,7 +58,8 @@ class Tests(unittest.TestCase):
     def test_get_scores(self):
         listOfCheckers = [StarWarsChecker(), StarTrekChecker()]
         scores = get_scores(listOfCheckers)
-        print('test not yet written')
+        self.assertAlmostEqual(scores['star wars'], 240.18)
+        self.assertAlmostEqual(scores['star trek'], 16.31)
 
 if __name__ == "__main__":
     unittest.main()

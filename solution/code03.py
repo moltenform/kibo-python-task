@@ -17,8 +17,10 @@ def count_star_wars_related():
     number_of_lines = 0
     with open(path) as f:
         for line in f:
+            line = line.strip()
             if not line:
                 continue
+            
             items = line.split(';')
             title = items[3]
             if code01.is_star_wars(title):

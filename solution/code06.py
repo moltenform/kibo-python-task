@@ -10,8 +10,10 @@ def get_scores():
     total_score_star_trek = 0.0
     with open(path) as f:
         for line in f:
+            line = line.strip()
             if not line:
                 continue
+                
             items = line.split(';')
             date = items[1]
             s_likes = items[2]
@@ -21,6 +23,7 @@ def get_scores():
                 total_score_star_wars += score
             if code05.is_star_trek_improved(title):
                 total_score_star_trek += score
+
     print('total_score_star_wars', total_score_star_wars)
     print('total_score_star_trek', total_score_star_trek)
     return total_score_star_wars, total_score_star_trek
@@ -30,6 +33,10 @@ def get_scores():
 class Tests(unittest.TestCase):
     def test_get_scores(self):
         total_score_star_wars, total_score_star_trek = get_scores()
+        
+        # spoiler alert :) these are the result scores
+        self.assertAlmostEqual(total_score_star_wars, 240.18)
+        self.assertAlmostEqual(total_score_star_trek, 16.31)
         
 
 if __name__ == "__main__":

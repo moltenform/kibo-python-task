@@ -22,6 +22,8 @@ class StarTrekChecker(BaseKeywordChecker):
 def get_scores(listOfCheckers):
     # listOfCheckers is a list of BaseKeywordChecker objects
     path = '../data/clickbait-input-data'
+    
+    # a map from the checker name to its score
     scores = {}
     for checker in listOfCheckers:
         scores[checker.name] = 0.0
