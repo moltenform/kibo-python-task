@@ -22,7 +22,6 @@ def count_star_wars_related():
             items = line.split(';')
             title = items[3]
             if code01.is_star_wars(title):
-                print(title)
                 number_of_lines += 1
     return number_of_lines
 

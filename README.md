@@ -6,8 +6,8 @@ My friends and I will sometimes chat about which is better - the Star Wars movie
 We'll be doing this,
 
 - Reading from a data file and computing a total score
-- Producing a JSON output file
-- Making the code object-oriented and more easy to change
+- Making sure we don't get incorrect search results if a word is within another word
+- Learning to make code less-redundant and easier to change in the future
 
 We'll provide structures along the way to assist you, you shouldn't feel like you have to invent the solution entirely on your own.
 

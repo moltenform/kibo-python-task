@@ -11,6 +11,7 @@ def get_score(title, s_likes, s_article_date):
 class Tests(unittest.TestCase):
     def test_get_score_with_5_likes(self):
         result = get_score('Test', 5, '2015-12-20')
+        # please use assertAlmostEqual instead of assertEqual for comparing scores
         self.assertAlmostEqual(result, 1.05)
 
 if __name__ == "__main__":

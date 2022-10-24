@@ -33,6 +33,24 @@ class Tests(unittest.TestCase):
     def test_for_star_wars_should_not_accept_star_trek(self):
         result = is_star_wars_improved('Article About Star Trek')
         self.assertFalse(result)
+    def test_does_not_recognize_other_actor(self):
+        result = is_star_wars_improved('Quotes From Frank Reynolds')
+        self.assertFalse(result)
+    def test_mid_string(self):
+        result = is_star_wars_improved('Is Rey The')
+        self.assertTrue(result)
+    def test_start_string(self):
+        result = is_star_wars_improved('Rey Is')
+        self.assertTrue(result)
+    def test_end_string(self):
+        result = is_star_wars_improved('Is Rey')
+        self.assertTrue(result)
+    def test_dbl_quotes_string(self):
+        result = is_star_wars_improved('Is "Rey"')
+        self.assertTrue(result)
+    def test_single_quotes_string(self):
+        result = is_star_wars_improved('Is \'Rey\'')
+        self.assertTrue(result)
 
 if __name__ == "__main__":
     unittest.main()

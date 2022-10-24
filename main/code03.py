@@ -23,7 +23,7 @@ class Tests(unittest.TestCase):
         self.assertEqual(15999, result)
     def test_count_star_wars_related(self):
         result = count_star_wars_related()
-        self.assertEqual(888, result)
+        self.assertEqual(150, result)
 
 
 if __name__ == "__main__":
