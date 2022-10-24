@@ -8,7 +8,7 @@ def get_score(title, s_likes, s_article_date):
 
 # you can write some tests here and run this script
 # to see if your code is working as expected
-class TestLogAnalyzer(unittest.TestCase):
+class Tests(unittest.TestCase):
     def test_get_score_with_5_likes(self):
         result = get_score('Test', 5, '2015-12-20')
         self.assertAlmostEqual(result, 1.05)

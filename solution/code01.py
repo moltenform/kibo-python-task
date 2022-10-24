@@ -21,7 +21,7 @@ def is_star_trek(title):
 
 # you can write some tests here and run this script
 # to see if your code is working as expected
-class TestLogAnalyzer(unittest.TestCase):
+class Tests(unittest.TestCase):
     def test_recognizes_star_trek_actor(self):
         result = is_star_trek('Actor Chris Pine Is Amazing')
         self.assertTrue(result)
