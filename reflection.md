@@ -14,6 +14,10 @@ I intentionally kept the code very basic. No performance tricks, one-liners, or 
     - be self directed - like the add-your-own part of 07, or the other extra credit challenges
     
     - i really like how kibo emphasized in its documents that it's not just solving the problem, it's building long term skills. so i tried to add information about refactoring. it's a good industry practice and a harder-to-describe part of good software engineering. many students won't really "feel" the need for refactoring the first time, but over time it will build muscle memory and they'll start to get it.
+    
+    - i divided it into bite-sized pieces to help students not get overwhelmed.
+    
+    - for my example keywords i selected people of different genders and races, including John Boyega the star of Force Awakens, who has British + Nigerian citizenship.
 
 - What will students learn from the task?
 
